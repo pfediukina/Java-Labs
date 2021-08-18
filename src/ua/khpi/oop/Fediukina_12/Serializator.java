@@ -1,4 +1,4 @@
-package ua.khpi.oop.Fediukina_08;
+package ua.khpi.oop.Fediukina_12;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.BufferedInputStream;
@@ -9,9 +9,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 
-public class Serializator {
+public class Serializator <T> {
 	
-	public void serialization(Container container )
+	public void serialization(T container )
 	{	
 		String path = Console.SerMenu();
 		if(path == null) return;
@@ -34,8 +34,8 @@ public class Serializator {
 		}
 	}
 	
-	public Container deserializtion() {
-		Container c = null;
+	public T deserializtion() {
+		T c = null;
 		String path = Console.DeserMenu();
 		if(path == null) return null;
 		
@@ -44,7 +44,8 @@ public class Serializator {
 					    new BufferedInputStream(
 					    new FileInputStream(path)));
 
-			var b = (Container ) decoder.readObject();
+			@SuppressWarnings("unchecked")
+			var b = (T) decoder.readObject();
 			 
 			return b;
 				 

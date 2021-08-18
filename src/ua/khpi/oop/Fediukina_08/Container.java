@@ -2,6 +2,11 @@ package ua.khpi.oop.Fediukina_08;
 
 public class Container implements java.io.Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	public   int index ;
 	public   PoliceCabinet[] m_data ;
 	

@@ -1,10 +1,7 @@
-package ua.khpi.oop.Fediukina_08;
+package ua.khpi.oop.Fediukina_09;
 
 
 public class Date implements java.io.Serializable{
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public int day = 01;
 	public int month = 01;
