@@ -1,4 +1,4 @@
-package ua.khpi.oop.Fediukina_12;
+package ua.khpi.oop.Fediukina_13;
 
 import java.io.Serializable;
 
@@ -89,4 +89,9 @@ public  class ContainerList<T  extends Serializable> implements Iterator<T> {
 		// TODO Auto-generated method stub
 		
 	}	
+	
+	public void sort()
+	{
+		
+	}
 }

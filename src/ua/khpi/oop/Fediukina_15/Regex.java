@@ -1,4 +1,4 @@
-package ua.khpi.oop.Fediukina_11;
+package ua.khpi.oop.Fediukina_15;
 
 import java.util.regex.*;
 
@@ -9,5 +9,4 @@ public class Regex {
 		Matcher m = p.matcher(name);
 		return m.matches();
 	}
-	
 }

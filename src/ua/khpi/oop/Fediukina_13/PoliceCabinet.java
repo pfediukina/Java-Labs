@@ -1,4 +1,4 @@
-package ua.khpi.oop.Fediukina_12;
+package ua.khpi.oop.Fediukina_13;
 
 import java.util.Scanner;
 
